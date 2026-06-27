@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 import os
+import psycopg2
 
 def run():
     st.header("📊 Exploratory Data Analysis")
@@ -15,4 +16,6 @@ def run():
     st.dataframe(df)
     
     st.subheader('Distribution Class')
+    conn = st.connection("postgresql", type="sql")
+    st.write(conn)
     
