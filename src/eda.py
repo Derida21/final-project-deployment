@@ -16,7 +16,7 @@ def run():
     st.dataframe(df)
     
     st.subheader('Distribution Class')
-    conn = st.connection("postgresql", type="sql")
+    conn = st.connection("str", type="sql")
     df = conn.query("SELECT NOW();", ttl=0)
 
     st.write(df)
