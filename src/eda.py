@@ -24,7 +24,7 @@ def run():
         with conn.session as session:
             session.execute(
                 text("""
-                    INSERT INTO raw_reviews
+                    INSERT INTO user_input
                     (product, rating, review)
 
                     VALUES
