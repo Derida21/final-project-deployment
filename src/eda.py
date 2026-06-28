@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 import os
-import psycopg2
-from sqlalchemy import text
+# import psycopg2
+# from sqlalchemy import text
 
 from db_connection import get_connection
 def run():
